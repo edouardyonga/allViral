@@ -22,13 +22,13 @@ in the browser >http://localhost:6800/
 
 
 ### Run deploy
-in another terminal tab run:
+in another terminal tab run:  
 `scrapyd-deploy default`
 
 
 ### Launch a spider
 `curl http://localhost:6800/schedule.json -d project=project -d spider=somespider`
->e.g:
+>e.g:  
 `curl http://localhost:6800/schedule.json -d project=allViral -d spider=techcrunch -d setting=FEED_URI=file:///home/edouard/Desktop/allViral/output.json`
 
 
