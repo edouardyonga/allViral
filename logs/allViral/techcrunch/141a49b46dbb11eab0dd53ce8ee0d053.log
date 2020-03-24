@@ -1,0 +1,516 @@
+2020-03-24 11:34:49 [scrapy.utils.log] INFO: Scrapy 2.0.1 started (bot: allViral)
+2020-03-24 11:34:49 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 20.3.0, Python 3.6.8 (default, Aug 20 2019, 17:12:48) - [GCC 8.3.0], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Linux-4.15.0-20-generic-x86_64-with-LinuxMint-19.1-tessa
+2020-03-24 11:34:49 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2020-03-24 11:34:49 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'allViral',
+ 'FEED_URI': 'file://home/edouard/Desktop/allViral/output.json',
+ 'LOG_FILE': 'logs/allViral/techcrunch/141a49b46dbb11eab0dd53ce8ee0d053.log',
+ 'NEWSPIDER_MODULE': 'allViral.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['allViral.spiders']}
+2020-03-24 11:34:49 [scrapy.extensions.telnet] INFO: Telnet Password: 75fc3a375261e97d
+2020-03-24 11:34:49 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2020-03-24 11:34:50 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-24 11:34:50 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-24 11:34:50 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2020-03-24 11:34:50 [scrapy.core.engine] INFO: Spider opened
+2020-03-24 11:34:50 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.open_spider of <scrapy.extensions.feedexport.FeedExporter object at 0x7f0f185c3940>>
+Traceback (most recent call last):
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/utils/defer.py", line 161, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/home/edouard/.local/lib/python3.6/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/extensions/feedexport.py", line 226, in open_spider
+    file = storage.open(spider)
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/extensions/feedexport.py", line 84, in open
+    os.makedirs(dirname)
+  File "/usr/lib/python3.6/os.py", line 210, in makedirs
+    makedirs(head, mode, exist_ok)
+  File "/usr/lib/python3.6/os.py", line 210, in makedirs
+    makedirs(head, mode, exist_ok)
+  File "/usr/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/edouard'
+2020-03-24 11:34:50 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-24 11:34:50 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-03-24 11:34:51 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://techcrunch.com/robots.txt> from <GET http://techcrunch.com/robots.txt>
+2020-03-24 11:34:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techcrunch.com/robots.txt> (referer: None)
+2020-03-24 11:34:53 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://techcrunch.com/> from <GET http://techcrunch.com/>
+2020-03-24 11:34:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techcrunch.com/> (referer: None)
+2020-03-24 11:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techcrunch.com/>
+{'author': '\n\t\t\t\tIngrid Lunden\t\t\t',
+ 'date': '2020-03-24T02:30:08-07:00',
+ 'description': '\n'
+                '\t\tDisney+, the streaming service from the Walt Disney '
+                'Company, has been rapidly ramping up in the last several '
+                'weeks. But while some of that expansion has seen some '
+                'hiccups, other regions are basically \t',
+ 'link': 'https://techcrunch.com/2020/03/24/with-lower-bandwidth-disney-opens-streaming-service-in-uk-ireland-5-other-european-countries-france-to-come-online-april-7/',
+ 'title': '\n'
+          '\t\t\t\tUsing 25% lower bandwidth, Disney+ launches in UK, Ireland, '
+          '5 other European countries, France to come online April 7\t\t\t'}
+2020-03-24 11:34:54 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x7f0f185c3940>>
+Traceback (most recent call last):
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/utils/defer.py", line 161, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/home/edouard/.local/lib/python3.6/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/extensions/feedexport.py", line 256, in item_scraped
+    slot = self.slot
+AttributeError: 'FeedExporter' object has no attribute 'slot'
+2020-03-24 11:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techcrunch.com/>
+{'author': '\n\t\t\t\tRomain Dillet\t\t\t',
+ 'date': '2020-03-24T02:10:57-07:00',
+ 'description': '\n'
+                '\t\tMeet Imatag, a French startup that has been working on a '
+                'watermarking product. Watermarking is nothing new, but the '
+                'company has found a way to mark images even if they are '
+                'resized, cropped, edited or \t',
+ 'link': 'https://techcrunch.com/2020/03/24/imatag-inserts-invisible-watermarks-to-track-images-around-the-web/',
+ 'title': '\n'
+          '\t\t\t\tImatag inserts invisible watermarks to track images around '
+          'the web\t\t\t'}
+2020-03-24 11:34:54 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x7f0f185c3940>>
+Traceback (most recent call last):
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/utils/defer.py", line 161, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/home/edouard/.local/lib/python3.6/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/extensions/feedexport.py", line 256, in item_scraped
+    slot = self.slot
+AttributeError: 'FeedExporter' object has no attribute 'slot'
+2020-03-24 11:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techcrunch.com/>
+{'author': '\n\t\t\t\tManish Singh\t\t\t',
+ 'date': '2020-03-23T23:31:08-07:00',
+ 'description': '\n'
+                '\t\tNetflix said on Tuesday that it is lowering its traffic '
+                'on network providers by 25% in India for a period of 30 days, '
+                'following a similar move in Europe in a bid to reduce the '
+                'congestion on internet p\t',
+ 'link': 'https://techcrunch.com/2020/03/23/netflix-to-reduce-its-traffic-on-isps-by-25-in-india/',
+ 'title': '\n'
+          '\t\t\t\tNetflix is reducing its traffic on ISPs by 25% in '
+          'India\t\t\t'}
+2020-03-24 11:34:54 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x7f0f185c3940>>
+Traceback (most recent call last):
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/utils/defer.py", line 161, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/home/edouard/.local/lib/python3.6/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/extensions/feedexport.py", line 256, in item_scraped
+    slot = self.slot
+AttributeError: 'FeedExporter' object has no attribute 'slot'
+2020-03-24 11:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techcrunch.com/>
+{'author': '\n\t\t\t\tConnie Loizos\t\t\t',
+ 'date': '2020-03-23T18:37:23-07:00',
+ 'description': '\n'
+                '\t\tApril Underwood, who until early last year was Slack’s '
+                'chief product officer, has joined Obvious Ventures as a '
+                'venture partner, she announced on Twitter today. Underwood '
+                'said that as part of the\t',
+ 'link': 'https://techcrunch.com/2020/03/23/former-slack-exec-april-underwood-has-joined-obvious-ventures-as-a-venture-partner/',
+ 'title': '\n'
+          '\t\t\t\tFormer Slack exec April Underwood has joined Obvious '
+          'Ventures as a venture partner\t\t\t'}
+2020-03-24 11:34:54 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x7f0f185c3940>>
+Traceback (most recent call last):
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/utils/defer.py", line 161, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/home/edouard/.local/lib/python3.6/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/extensions/feedexport.py", line 256, in item_scraped
+    slot = self.slot
+AttributeError: 'FeedExporter' object has no attribute 'slot'
+2020-03-24 11:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techcrunch.com/>
+{'author': '\n\t\t\t\tJonathan Shieber\t\t\t',
+ 'date': '2020-03-23T18:00:11-07:00',
+ 'description': '\n'
+                '\t\tCompass, the real-estate brokerage startup backed by '
+                'roughly $1.6 billion in venture funding, has laid off 15% of '
+                'its staff as a result of the shifting economic fortunes '
+                'created by the global response\t',
+ 'link': 'https://techcrunch.com/2020/03/23/with-the-real-estate-industry-facing-headwinds-softbank-backed-compass-lays-off-15-of-staff-after/',
+ 'title': '\n'
+          '\t\t\t\tWith the real estate industry facing headwinds, '
+          'SoftBank-backed Compass lays off 15% of staff\t\t\t'}
+2020-03-24 11:34:54 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x7f0f185c3940>>
+Traceback (most recent call last):
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/utils/defer.py", line 161, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/home/edouard/.local/lib/python3.6/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/extensions/feedexport.py", line 256, in item_scraped
+    slot = self.slot
+AttributeError: 'FeedExporter' object has no attribute 'slot'
+2020-03-24 11:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techcrunch.com/>
+{'author': '\n\t\t\t\tDanny Crichton\t\t\t',
+ 'date': '2020-03-23T16:22:01-07:00',
+ 'description': '\n'
+                '\t\tThe world has been turned upside-down the past few weeks, '
+                'with flight cancellations, global travel bans and a massive '
+                'slowdown of worldwide commerce. For immigrants to the United '
+                'States here on work v\t',
+ 'link': 'https://techcrunch.com/2020/03/23/join-our-conference-call-with-immigration-attorney-sophie-alcorn-tuesday-at-1pm-pdt/',
+ 'title': '\n'
+          '\t\t\t\tJoin our conference call with immigration attorney Sophie '
+          'Alcorn Tuesday at 1pm PDT\t\t\t'}
+2020-03-24 11:34:54 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x7f0f185c3940>>
+Traceback (most recent call last):
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/utils/defer.py", line 161, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/home/edouard/.local/lib/python3.6/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/extensions/feedexport.py", line 256, in item_scraped
+    slot = self.slot
+AttributeError: 'FeedExporter' object has no attribute 'slot'
+2020-03-24 11:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techcrunch.com/>
+{'author': '\n\t\t\t\tDarrell Etherington\t\t\t',
+ 'date': '2020-03-23T16:08:36-07:00',
+ 'description': '\n'
+                '\t\tStartups continue to find new ways to contribute to '
+                'ongoing efforts to fight the global spread of COVID-19 during '
+                'the current global coronavirus pandemic, and personal health '
+                'hardware-maker Oura is no\t',
+ 'link': 'https://techcrunch.com/2020/03/23/oura-partners-with-ucsf-to-determine-if-its-smart-ring-can-hep-detect-covid-19-early/',
+ 'title': '\n'
+          '\t\t\t\tOura partners with UCSF to determine if its smart ring can '
+          'help detect COVID-19 early\t\t\t'}
+2020-03-24 11:34:54 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x7f0f185c3940>>
+Traceback (most recent call last):
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/utils/defer.py", line 161, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/home/edouard/.local/lib/python3.6/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/extensions/feedexport.py", line 256, in item_scraped
+    slot = self.slot
+AttributeError: 'FeedExporter' object has no attribute 'slot'
+2020-03-24 11:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techcrunch.com/>
+{'author': '\n\t\t\t\tDarrell Etherington\t\t\t',
+ 'date': '2020-03-23T15:54:37-07:00',
+ 'description': '\n'
+                '\t\tThe FDA has updated its guidelines for COVID-19 testing '
+                'procedures to make the process easier and less uncomfortable '
+                'for patients, as well as to help limit the impact of testing '
+                'on the supply of perso\t',
+ 'link': 'https://techcrunch.com/2020/03/23/fda-updates-covid-19-testing-guidelines-to-allow-self-swab-tests/',
+ 'title': '\n'
+          '\t\t\t\tFDA updates COVID-19 testing guidelines to allow self-swab '
+          'tests\t\t\t'}
+2020-03-24 11:34:54 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x7f0f185c3940>>
+Traceback (most recent call last):
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/utils/defer.py", line 161, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/home/edouard/.local/lib/python3.6/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/extensions/feedexport.py", line 256, in item_scraped
+    slot = self.slot
+AttributeError: 'FeedExporter' object has no attribute 'slot'
+2020-03-24 11:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techcrunch.com/>
+{'author': '\n\t\t\t\tAmit Paka\t\t\t',
+ 'date': '2020-03-23T15:38:14-07:00',
+ 'description': '\n'
+                '\t\tThrough real-time monitoring, companies will be given '
+                'visibility into the “black box” to see exactly how their AI '
+                'and ML models operate.\t',
+ 'link': 'https://techcrunch.com/2020/03/23/monitoring-is-critical-to-successful-ai/',
+ 'title': '\n\t\t\t\tMonitoring is critical to successful AI\t\t\t'}
+2020-03-24 11:34:54 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x7f0f185c3940>>
+Traceback (most recent call last):
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/utils/defer.py", line 161, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/home/edouard/.local/lib/python3.6/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/extensions/feedexport.py", line 256, in item_scraped
+    slot = self.slot
+AttributeError: 'FeedExporter' object has no attribute 'slot'
+2020-03-24 11:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techcrunch.com/>
+{'author': '\n\t\t\t\tKrishna Gade\t\t\t',
+ 'date': '2020-03-23T15:15:26-07:00',
+ 'description': '\n'
+                '\t\tTo help gig workers make ends meet during these times of '
+                'job insecurity amid COVID-19, New York City is offering gig '
+                'workers who are licensed with the TLC to help with delivery '
+                'work. While the demand \t',
+ 'link': 'https://techcrunch.com/2020/03/23/nyc-tlc-gig-workers-covid-19/',
+ 'title': '\n'
+          '\t\t\t\tNYC is offering gig workers delivery jobs during COVID-19 '
+          'pandemic\t\t\t'}
+2020-03-24 11:34:54 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x7f0f185c3940>>
+Traceback (most recent call last):
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/utils/defer.py", line 161, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/home/edouard/.local/lib/python3.6/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/extensions/feedexport.py", line 256, in item_scraped
+    slot = self.slot
+AttributeError: 'FeedExporter' object has no attribute 'slot'
+2020-03-24 11:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techcrunch.com/>
+{'author': '\n\t\t\t\tMegan Rose Dickey\t\t\t',
+ 'date': '2020-03-23T14:47:01-07:00',
+ 'description': '\n'
+                '\t\tThe vicissitudes of social distancing have taken many '
+                'people by surprise, making video calls a new necessity for '
+                'distant socializing. But which of the two dozen apps out '
+                'there should you and your (per\t',
+ 'link': 'https://techcrunch.com/2020/03/23/the-best-video-chat-apps-to-turn-social-distancing-into-distant-socializing/',
+ 'title': '\n'
+          '\t\t\t\tThe best video chat apps to turn social distancing into '
+          'distant socializing\t\t\t'}
+2020-03-24 11:34:54 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x7f0f185c3940>>
+Traceback (most recent call last):
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/utils/defer.py", line 161, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/home/edouard/.local/lib/python3.6/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/extensions/feedexport.py", line 256, in item_scraped
+    slot = self.slot
+AttributeError: 'FeedExporter' object has no attribute 'slot'
+2020-03-24 11:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techcrunch.com/>
+{'author': '\n\t\t\t\tDevin Coldewey\t\t\t',
+ 'date': '2020-03-23T14:39:42-07:00',
+ 'description': '\n'
+                '\t\tFiat Chrysler Automobiles said Monday it will start '
+                'manufacturing face masks in the coming weeks and donate the '
+                'critical medical equipment to first responders and healthcare '
+                'workers — the latest aut\t',
+ 'link': 'https://techcrunch.com/2020/03/23/fiat-chrysler-to-start-producing-1-million-face-masks-a-month/',
+ 'title': '\n'
+          '\t\t\t\tFiat Chrysler to start producing 1 million face masks a '
+          'month\t\t\t'}
+2020-03-24 11:34:54 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x7f0f185c3940>>
+Traceback (most recent call last):
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/utils/defer.py", line 161, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/home/edouard/.local/lib/python3.6/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/extensions/feedexport.py", line 256, in item_scraped
+    slot = self.slot
+AttributeError: 'FeedExporter' object has no attribute 'slot'
+2020-03-24 11:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techcrunch.com/>
+{'author': '\n\t\t\t\tKirsten Korosec\t\t\t',
+ 'date': '2020-03-23T14:29:31-07:00',
+ 'description': '\n'
+                '\t\tFor much of the history of enterprise technology, '
+                'companies tended to buy from a single vendor because it made '
+                'managing the entire affair much easier while giving them a '
+                '“single throat to choke&\t',
+ 'link': 'https://techcrunch.com/2020/03/23/startups-are-helping-cloud-infrastructure-customers-avoid-vendor-lock-in/',
+ 'title': '\n'
+          '\t\t\t\tStartups are helping cloud infrastructure customers avoid '
+          'vendor lock-in\t\t\t'}
+2020-03-24 11:34:54 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x7f0f185c3940>>
+Traceback (most recent call last):
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/utils/defer.py", line 161, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/home/edouard/.local/lib/python3.6/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/extensions/feedexport.py", line 256, in item_scraped
+    slot = self.slot
+AttributeError: 'FeedExporter' object has no attribute 'slot'
+2020-03-24 11:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techcrunch.com/>
+{'author': '\n\t\t\t\tRon Miller\t\t\t',
+ 'date': '2020-03-23T14:16:25-07:00',
+ 'description': '\n'
+                '\t\tSmart thermometer maker Kinsa has been working on '
+                'building accurate, predictive models of how seasonal '
+                'illnesses like the flu travel in and among communities — and '
+                'its fever map is finding new u\t',
+ 'link': 'https://techcrunch.com/2020/03/23/kinsas-fever-map-could-show-just-how-crucial-it-is-to-stay-home-to-stop-covid-19-spread/',
+ 'title': '\n'
+          '\t\t\t\tKinsa’s fever map could show just how crucial it is to stay '
+          'home to stop COVID-19 spread\t\t\t'}
+2020-03-24 11:34:54 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x7f0f185c3940>>
+Traceback (most recent call last):
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/utils/defer.py", line 161, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/home/edouard/.local/lib/python3.6/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/extensions/feedexport.py", line 256, in item_scraped
+    slot = self.slot
+AttributeError: 'FeedExporter' object has no attribute 'slot'
+2020-03-24 11:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techcrunch.com/>
+{'author': '\n\t\t\t\tDarrell Etherington\t\t\t',
+ 'date': '2020-03-23T14:15:08-07:00',
+ 'description': '\n'
+                '\t\tMitch Parker has one of Indiana’s most critical jobs. As '
+                'chief information security officer for Indiana University '
+                'Health, Parker oversees cybersecurity for more than 30,000 '
+                'employees at 18 hosp\t',
+ 'link': 'https://techcrunch.com/2020/03/23/better-know-a-cso-indiana-university-healths-mitch-parker/',
+ 'title': '\n'
+          '\t\t\t\tBetter know a CSO: Indiana University Health’s Mitch '
+          'Parker\t\t\t'}
+2020-03-24 11:34:54 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x7f0f185c3940>>
+Traceback (most recent call last):
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/utils/defer.py", line 161, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/home/edouard/.local/lib/python3.6/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/extensions/feedexport.py", line 256, in item_scraped
+    slot = self.slot
+AttributeError: 'FeedExporter' object has no attribute 'slot'
+2020-03-24 11:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techcrunch.com/>
+{'author': '\n\t\t\t\tZack Whittaker\t\t\t',
+ 'date': '2020-03-23T14:01:55-07:00',
+ 'description': '\n'
+                '\t\tThe technology industry’s central role in an American '
+                'economy shaped by attempts to mitigate the spread of COVID-19 '
+                'is being reflected in how investors are approaching markets '
+                'in these turbulent\t',
+ 'link': 'https://techcrunch.com/2020/03/23/stocks-broadly-fall-as-nasdaq-dips-modestly-saas-gains-on-the-day/',
+ 'title': '\n'
+          '\t\t\t\tStocks broadly fall as Nasdaq dips modestly, SaaS gains on '
+          'the day\t\t\t'}
+2020-03-24 11:34:54 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x7f0f185c3940>>
+Traceback (most recent call last):
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/utils/defer.py", line 161, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/home/edouard/.local/lib/python3.6/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/extensions/feedexport.py", line 256, in item_scraped
+    slot = self.slot
+AttributeError: 'FeedExporter' object has no attribute 'slot'
+2020-03-24 11:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techcrunch.com/>
+{'author': '\n\t\t\t\tAlex Wilhelm\t\t\t',
+ 'date': '2020-03-23T12:47:33-07:00',
+ 'description': '\n'
+                '\t\tLast week, popular music platform Bandcamp announced that '
+                'it would be waiving its revenue shares from all sales for 24 '
+                'hours, starting Friday morning. The move was an effort to '
+                'help boost income for t\t',
+ 'link': 'https://techcrunch.com/2020/03/23/musicians-pulled-in-4-3m-after-bandcamp-waived-revenue-shares-for-24-hours/',
+ 'title': '\n'
+          '\t\t\t\tMusicians pulled in $4.3M after Bandcamp waived revenue '
+          'shares for 24 hours\t\t\t'}
+2020-03-24 11:34:54 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x7f0f185c3940>>
+Traceback (most recent call last):
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/utils/defer.py", line 161, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/home/edouard/.local/lib/python3.6/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/extensions/feedexport.py", line 256, in item_scraped
+    slot = self.slot
+AttributeError: 'FeedExporter' object has no attribute 'slot'
+2020-03-24 11:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techcrunch.com/>
+{'author': '\n\t\t\t\tKirsten Korosec\t\t\t',
+ 'date': '2020-03-23T12:38:47-07:00',
+ 'description': '\n'
+                '\t\tAmazon is going to be working with a new research '
+                'initiative backed in part by the Gates Foundation that will '
+                'distribute at-home coronavirus assessment kits, and then '
+                'deliver the collected samples to \t',
+ 'link': 'https://techcrunch.com/2020/03/23/amazon-care-to-provide-delivery-and-pick-up-of-at-home-covid-19-test-sample-kits-in-seattle-trial/',
+ 'title': '\n'
+          '\t\t\t\tAmazon Care to provide delivery and pick-up of at-home '
+          'COVID-19 test sample kits in Seattle trial\t\t\t'}
+2020-03-24 11:34:54 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x7f0f185c3940>>
+Traceback (most recent call last):
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/utils/defer.py", line 161, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/home/edouard/.local/lib/python3.6/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/extensions/feedexport.py", line 256, in item_scraped
+    slot = self.slot
+AttributeError: 'FeedExporter' object has no attribute 'slot'
+2020-03-24 11:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techcrunch.com/>
+{'author': '\n\t\t\t\tJonathan Shieber\t\t\t',
+ 'date': '2020-03-23T12:06:36-07:00',
+ 'description': '\n'
+                '\t\tSan Francisco-based Instacart today announced it will '
+                'bring on 300,000 shoppers for its grocery delivery platform '
+                'over the next three months. The move is meant to manage an '
+                'uptick in demand due to the\t',
+ 'link': 'https://techcrunch.com/2020/03/23/instacart-will-bring-on-300000-new-full-time-shoppers-due-to-coronavirus/',
+ 'title': '\n'
+          '\t\t\t\tInstacart will bring on 300,000 new full-service shoppers '
+          'due to coronavirus\t\t\t'}
+2020-03-24 11:34:54 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x7f0f185c3940>>
+Traceback (most recent call last):
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/utils/defer.py", line 161, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/home/edouard/.local/lib/python3.6/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/extensions/feedexport.py", line 256, in item_scraped
+    slot = self.slot
+AttributeError: 'FeedExporter' object has no attribute 'slot'
+2020-03-24 11:34:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techcrunch.com/>
+{'author': '\n\t\t\t\tBrian Heater\t\t\t',
+ 'date': '2020-03-23T11:43:05-07:00',
+ 'description': '\n'
+                '\t\tEarlier this month, the FCC issued a new measure aimed at '
+                'easing some of the burdens on consumers as COVID-19 continues '
+                'to have an increasingly profound impact on nearly every '
+                'aspect of life. Most or \t',
+ 'link': 'https://techcrunch.com/2020/03/23/carriers-introduce-plans-to-keep-consumers-connected-during-covid-19-pandemic/',
+ 'title': '\n'
+          '\t\t\t\tCarriers introduce plans to keep consumers connected during '
+          'COVID-19 pandemic\t\t\t'}
+2020-03-24 11:34:54 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x7f0f185c3940>>
+Traceback (most recent call last):
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/utils/defer.py", line 161, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/home/edouard/.local/lib/python3.6/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/extensions/feedexport.py", line 256, in item_scraped
+    slot = self.slot
+AttributeError: 'FeedExporter' object has no attribute 'slot'
+2020-03-24 11:34:54 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-03-24 11:34:54 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.close_spider of <scrapy.extensions.feedexport.FeedExporter object at 0x7f0f185c3940>>
+Traceback (most recent call last):
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/utils/defer.py", line 161, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/home/edouard/.local/lib/python3.6/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/home/edouard/.local/lib/python3.6/site-packages/scrapy/extensions/feedexport.py", line 235, in close_spider
+    slot = self.slot
+AttributeError: 'FeedExporter' object has no attribute 'slot'
+2020-03-24 11:34:54 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1208,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 225569,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 2,
+ 'downloader/response_status_count/301': 2,
+ 'elapsed_time_seconds': 4.685074,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 3, 24, 10, 34, 54, 726908),
+ 'item_scraped_count': 20,
+ 'log_count/DEBUG': 24,
+ 'log_count/ERROR': 22,
+ 'log_count/INFO': 10,
+ 'memusage/max': 57995264,
+ 'memusage/startup': 57995264,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2020, 3, 24, 10, 34, 50, 41834)}
+2020-03-24 11:34:54 [scrapy.core.engine] INFO: Spider closed (finished)
