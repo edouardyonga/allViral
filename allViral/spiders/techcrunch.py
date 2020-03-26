@@ -33,6 +33,15 @@ class TechcrunchSpider(scrapy.Spider):
         # author
         authors = response.css('div span.river-byline__authors a::text').getall()
 
+        # image
+        images = response.css('.post-block__media img::attr(src)').getall()
+        img_srcs = []
+
+        for img in images:
+            image = img.split('?')
+            img_srcs.append(image[0]) 
+            pass
+
         for i in range(len(titles)):
 
             title = titles[i]
@@ -40,6 +49,8 @@ class TechcrunchSpider(scrapy.Spider):
             description = descriptions[i]
             date = dates[i]
             author = authors[i]
+            img_link = img_srcs[i]
+
 
             # item = Article(title = title, link = link, description = description, date = date, author = author)
             article = {
@@ -48,10 +59,10 @@ class TechcrunchSpider(scrapy.Spider):
                 'description': descriptions[i],
                 'date': dates[i],
                 'author': authors[i],
+                'image' : img_link
             }
             yield article
 
             jsonArticle = json.dumps(article)
 
         pass
-
