@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
+import json
 
 class Article(scrapy.Item):
     title = scrapy.Field()
@@ -40,9 +41,17 @@ class TechcrunchSpider(scrapy.Spider):
             date = dates[i]
             author = authors[i]
 
-            article = Article(title = title, link = link, description = description, date = date, author = author)
-
+            # item = Article(title = title, link = link, description = description, date = date, author = author)
+            article = {
+                'title': titles[i],
+                'link': links[i],
+                'description': descriptions[i],
+                'date': dates[i],
+                'author': authors[i],
+            }
             yield article
+
+            jsonArticle = json.dumps(article)
 
         pass
 
